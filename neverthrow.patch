@@ -1,0 +1,14 @@
+--- node_modules/neverthrow/dist/index.es.js	2024-08-28 16:12:20.398991322 +0900
++++ node_modules/neverthrow/dist/index.es.js	2024-08-28 16:12:07.895828585 +0900
+@@ -1,3 +1,4 @@
++const namespace = function() {
+ const defaultErrorConfig = {
+     withStackTrace: false,
+ };
+@@ -370,4 +371,5 @@
+ const fromThrowable = Result.fromThrowable;
+ //#endregion
+ 
+-export { Err, Ok, Result, ResultAsync, err, errAsync, fromAsyncThrowable, fromPromise, fromSafePromise, fromThrowable, ok, okAsync, safeTry };
++return { Err, Ok, Result, ResultAsync, err, errAsync, fromAsyncThrowable, fromPromise, fromSafePromise, fromThrowable, ok, okAsync, safeTry };
++}();

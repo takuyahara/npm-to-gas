@@ -1,0 +1,1 @@
+console.log(neverthrow.ok(new Error()).isErr())
